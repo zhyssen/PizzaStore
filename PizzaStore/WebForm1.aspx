@@ -19,23 +19,38 @@
                 </asp:DropDownList>
             </p>
             <p>
-                <asp:RadioButtonList ID="ThinRadioButtonList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThinRadioButtonList_SelectedIndexChanged">
-                    <asp:ListItem Selected="True">Thin Crust</asp:ListItem>
-                    <asp:ListItem>Thick Crust (+$2.00)</asp:ListItem>
-                </asp:RadioButtonList>
+                <asp:Label ID="CrustLabel" runat="server" style="font-weight: 700" Text="Crust"></asp:Label>
             </p>
             <p>
-                Toppings: (+$1.50 for each item) <asp:CheckBoxList ID="ToppingCheckBoxList" runat="server">
-                    <asp:ListItem>Pepperoni</asp:ListItem>
-                    <asp:ListItem>Onions</asp:ListItem>
-                    <asp:ListItem>Green Pepper</asp:ListItem>
-                    <asp:ListItem>Mushrooms</asp:ListItem>
-                    <asp:ListItem>Olives</asp:ListItem>
-                    <asp:ListItem>Sausage</asp:ListItem>
-                </asp:CheckBoxList>
+                <asp:RadioButton ID="ThinRadioButton" runat="server" Checked="True" EnableTheming="True" GroupName="Crust" Text="Thin Crust" />
             </p>
             <p>
-                Special Deal: Save $2.00 if you order pepperoni, mushrooms, and green pepper <strong>or</strong> onions, olives, and sausage on your pizza.</p>
+                <asp:RadioButton ID="ThickRadioButton" runat="server" GroupName="Crust" Text="Thick Crust (+$2.00)" />
+            </p>
+            <p>
+                &nbsp;</p>
+            <p>
+                <asp:Label ID="ToppingsLabel" runat="server" style="font-weight: 700" Text="Toppings: (+$1.50 for each topping)"></asp:Label>
+            </p>
+            <p>
+                <asp:CheckBox ID="PepperoniCheckBox" runat="server" Text="Pepperoni" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:CheckBox ID="MushroomsCheckBox" runat="server" Text="Mushrooms" />
+            </p>
+            <p>
+                <asp:CheckBox ID="OnionsCheckBox" runat="server" Text="Onions" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:CheckBox ID="OlivesCheckBox" runat="server" Text="Olives" />
+            </p>
+            <p>
+                <asp:CheckBox ID="GreenPepperCheckBox" runat="server" Text="Green Pepper" />
+&nbsp;&nbsp;
+                <asp:CheckBox ID="SausageCheckBox" runat="server" Text="Sausage" />
+            </p>
+            <p>
+                &nbsp;</p>
+            <p>
+                <em>Special Deal: Save $3.00 if you order pepperoni, onion, and green pepper </em> <strong><em>or</em></strong><em> mushrooms, olives, and sausage on your pizza.</em></p>
             <p>
                 <asp:Button ID="PurchaseButton" runat="server" OnClick="PurchaseButton_Click" Text="Purchase" />
             </p>

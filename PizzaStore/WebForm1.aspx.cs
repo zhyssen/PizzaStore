@@ -32,8 +32,54 @@ namespace PizzaStore
                 total = 10.00m;
             }
 
-            // Get the pizza size
-            if ()
+            // Get the crust selection
+            if (ThickRadioButton.Checked == true)
+            {
+                total += 2.00m;
+            }
+
+            // Get the toppings
+            if (PepperoniCheckBox.Checked == true)
+            {
+                total += 1.50m;
+            }
+
+            if(OnionsCheckBox.Checked == true)
+            {
+                total += 1.50m;
+            }
+
+            if(GreenPepperCheckBox.Checked == true)
+            {
+                total += 1.50m;
+            }
+
+            if(MushroomsCheckBox.Checked == true)
+            {
+                total += 1.50m;
+            }
+            if(OlivesCheckBox.Checked == true)
+            {
+                total += 1.50m;
+            }
+
+            if(SausageCheckBox.Checked == true)
+            {
+                total += 1.50m;
+            }
+
+            // Special Savings
+            if (PepperoniCheckBox.Checked && OnionsCheckBox.Checked &&
+                GreenPepperCheckBox.Checked)
+            {
+                total -= 3.00m;
+            }
+            else if (MushroomsCheckBox.Checked && OlivesCheckBox.Checked &&
+                SausageCheckBox.Checked)
+            {
+                total -= 3.00m;
+            }
+            
 
             TotalLabel.Text = total.ToString("c");
         }

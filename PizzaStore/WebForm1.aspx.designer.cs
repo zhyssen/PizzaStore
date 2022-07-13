@@ -33,22 +33,94 @@ namespace PizzaStore
         protected global::System.Web.UI.WebControls.DropDownList SizeDropDownList;
 
         /// <summary>
-        /// ThinRadioButtonList control.
+        /// CrustLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList ThinRadioButtonList;
+        protected global::System.Web.UI.WebControls.Label CrustLabel;
 
         /// <summary>
-        /// ToppingCheckBoxList control.
+        /// ThinRadioButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList ToppingCheckBoxList;
+        protected global::System.Web.UI.WebControls.RadioButton ThinRadioButton;
+
+        /// <summary>
+        /// ThickRadioButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton ThickRadioButton;
+
+        /// <summary>
+        /// ToppingsLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ToppingsLabel;
+
+        /// <summary>
+        /// PepperoniCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox PepperoniCheckBox;
+
+        /// <summary>
+        /// MushroomsCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox MushroomsCheckBox;
+
+        /// <summary>
+        /// OnionsCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox OnionsCheckBox;
+
+        /// <summary>
+        /// OlivesCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox OlivesCheckBox;
+
+        /// <summary>
+        /// GreenPepperCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox GreenPepperCheckBox;
+
+        /// <summary>
+        /// SausageCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox SausageCheckBox;
 
         /// <summary>
         /// PurchaseButton control.
